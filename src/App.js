@@ -10,15 +10,19 @@ import AppLayout from './pages/layout/AppLayout';
 import Home from './pages/Home';
 import Explore from  "./pages/Explore.js"
 import Profile from "./pages/Profile"
+import LoginComponent from './pages/LoginComponent';
+import RegisterComponent from "./pages/RegisterComponent"
 function App() {
   return (<>
 <BrowserRouter>
 <Route exact
-path={["/","/invite","/code_confirm" ,"/allow_notification" ]}>
+path={["/","/welcome","/register","/invite","/code_confirm" ,"/allow_notification" ]}>
 
   <PlanLayout>
   <Switch>
-<Route exact path="/" component={Welcome}/>
+<Route exact path="/" component={LoginComponent}/>
+<Route exact path="/register" component={RegisterComponent}/>
+<Route exact path="/welcome" component={Welcome}/>
 <Route exact path="/invite" component={PhoneConfirmation}/>
 <Route exact path="/code_confirm" component={CodeConfirm}/>
 <Route exact path="/allow_notification" component={AllowNotification}/>

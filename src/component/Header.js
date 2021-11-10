@@ -10,17 +10,17 @@ export default function Header  ()  {
 
 </Link>
 <div className={style.nav_items}>
-<Link excate to="/friends_invite" >
+<Link excate to="#" >
     <img src="/images/invite.png">
 
     </img>
 </Link>
-<Link excate to="/upcoming" >
+<Link excate to="#" >
     <img src="/images/calendar.png">
 
     </img>
 </Link>
-<Link excate to="/activity" >
+<Link excate to="#" >
     <img src="/images/noti.png">
 
     </img>
